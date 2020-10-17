@@ -96,14 +96,7 @@ async def explain(ctx):
 
     # More detail about info types
     embed.add_field(name="Info Types",
-                    value="""
-                    Table: Provides a table of general info.
-                    Obtain: Provides info on how to get the object.
-                    Trivia: Provides facts about the object.
-                    Usage: Provide info on how to use the object.
-                    Spawning: Provides info on where the mob spawns.
-                    Drops: Provides info on the drops of the mob.
-                    Behavior: Provides info on how the mob acts.""", inline=True)
+                    value=f"""Type {COMMAND}Info for more information about Info types""", inline=True)
 
     # How to use the command
     embed.add_field(name="Examples",
@@ -137,7 +130,32 @@ async def give(ctx, *args):
     # Gives the user the url
     await ctx.send(f"{ctx.author.mention}, url: {Page}")
 
+    
+# Information on information types
+@Bot.command(name='Info', help=f"Usage: {COMMAND}Info")
+async def type(ctx):
+    # Creates a embedded message
+    embed = discord.Embed(title="Information types",
+                          description="A list of information types")
 
+    # Creates a list of information types
+    embed.add_field(name="List",
+                    value="""
+                    Table: Provides a table of general info.
+                    Obtain: Provides info on how to get the object.
+                    Trivia: Provides facts about the object.
+                    Usage: Provide info on how to use the object.
+                    Spawning: Provides info on where the mob spawns.
+                    Drops: Provides info on the drops of the mob.
+                    Behavior: Provides info on how the mob acts.
+                    Generation: Provides info on how structure generates.
+                    Structure: Provides info on the structure.
+                    Description: Provides info on biomes.""", inline=True)
+
+    # Send the information type
+    await ctx.send(embed=embed)
+    
+    
 # In case of a error relating to a command
 @Bot.event
 async def on_command_error(ctx, error):
