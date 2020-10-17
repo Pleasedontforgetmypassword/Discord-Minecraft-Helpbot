@@ -130,7 +130,7 @@ async def explain(ctx):
 
 
 # Provides url to the minecraft web page
-@Bot.command(name="Url", help=f"Usage: {COMMAND}Url (Minecraft object name)")
+@Bot.command(name="url", help=f"Usage: {COMMAND}url (Minecraft object name)")
 async def give(ctx, *args):
     # Creates the url with the object name
     Page = f"https://minecraft.gamepedia.com/{'_'.join(args)}"
