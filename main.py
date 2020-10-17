@@ -63,7 +63,7 @@ async def Fact(ctx, arg1, *args):
                         value=text)
 
     # Print the length of the text
-    print(len(text))
+    print(f"Text length: {len(text)}")
     # If the length of text is longer than discord's character limit
     if len(text) >= 2000:
         # Add a field to tell them that the text is too big
