@@ -48,11 +48,11 @@ async def Fact(ctx, arg1, *args):
                         value=infotable(url))
 
     # See if the info type is a actual info type
-    elif arg1.capitalize() in Lookup:
+    elif Argument in Lookup:
         # Text will store the desired information
         text = clean(webmachine(Lookup[Argument], General))
         # Add the info to the embedded message
-        embed.add_field(name=arg1.capitalize(),
+        embed.add_field(name=Argument,
                         value=str(text))
 
     # if not, well something went wrong
