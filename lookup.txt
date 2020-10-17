@@ -4,3 +4,6 @@ Usage <span class="mw-headline" id="Usage">Usage</span>
 Spawning <span class="mw-headline" id="Spawning">Spawning</span>
 Drops <span class="mw-headline" id="Drops">Drops</span>
 Behavior <span class="mw-headline" id="Behavior">Behavior</span>
+Generation <span class="mw-headline" id="Generation">Generation</span>
+Structure <span class="mw-headline" id="Structure">Structure</span>
+Description <span class="mw-headline" id="Description">Description</span>
