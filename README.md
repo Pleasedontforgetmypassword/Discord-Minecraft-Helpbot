@@ -8,4 +8,5 @@ Second: Go into `.env` and Paste the Discord's bot Token between the quotation m
 Note: You can customize the command prefix, by replacing the ! with any symbol.\
 E.g: \
 `DISCORD_TOKEN="(Paste Discord's Bot Token)"`,\
-`COMMAND_PREFIX="!"`
+`COMMAND_PREFIX="!"`\
+Then run `main.py`
